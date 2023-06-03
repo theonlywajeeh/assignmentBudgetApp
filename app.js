@@ -61,21 +61,21 @@ function calculateRemainingBudget() {
         remainingBudgetElement.textContent = "Remaining Budget: $" + remainingBudget.toFixed(2);
 }
 
-// function showError(message) {
-//         var errorElement = document.createElement("p");
-//         errorElement.className = "error-message";
-//         errorElement.textContent = message;
+function showError(message) {
+        var errorElement = document.createElement("p");
+        errorElement.className = "error-message";
+        errorElement.textContent = message;
 
-//         var container = document.querySelector(".container");
-//         container.insertBefore(errorElement, container.firstChild);
-// }
+        var container = document.querySelector(".container");
+        container.insertBefore(errorElement, container.firstChild);
+}
 
-// function clearError() {
-//         var errorElement = document.querySelector(".error-message");
-//         if (errorElement) {
-//                 errorElement.remove();
-//         }
-// }
+function clearError() {
+        var errorElement = document.querySelector(".error-message");
+        if (errorElement) {
+                errorElement.remove();
+        }
+}
 
 function updateBudget() {
         budget = parseInt(document.getElementById("inputBudget").value);
